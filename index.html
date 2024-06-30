@@ -33,6 +33,7 @@
             border: none;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            margin-right: 10px; /* Adds space between buttons */
         }
 
         .content .button:hover {
@@ -45,10 +46,23 @@
         <h1>Welcome To FurChat</h1>
         <p>FurChat is a social media platform for therians and furries, providing a community space for like-minded individuals to connect and share.</p>
         <a href="https://en.wikipedia.org/wiki/Furry_fandom" target="_blank" class="button">What’s A Furry</a>
+        
+        <!-- New button for publishing -->
+        <button class="button" onclick="openEmail()">Publish To Platform (Email Required)</button>
     </div>
 
     <script>
-        // Inline JavaScript example (not needed for centering)
+        function openEmail() {
+            // Email details
+            var email = 'contactdeclan@duck.com';
+            var subject = 'My Video/Photo/Post For Furchat';
+            
+            // Construct mailto link
+            var mailtoLink = 'mailto:' + email + '?subject=' + encodeURIComponent(subject);
+            
+            // Open the email client
+            window.location.href = mailtoLink;
+        }
     </script>
 </body>
 </html>

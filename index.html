@@ -24,20 +24,27 @@
             margin-bottom: 20px; /* Adds some space below the paragraph */
         }
 
-        .content a {
-            color: white; /* Styles the link text color */
-            text-decoration: underline; /* Adds underline to the link */
+        .content .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
-        .content a:hover {
-            color: lightgray; /* Changes link color on hover */
+        .content .button:hover {
+            background-color: #555;
         }
     </style>
 </head>
 <body>
     <div class="content">
         <h1>Welcome To FurChat</h1>
-        <p>FurChat is a social media platform for therians and furries, providing a community space for like-minded individuals to connect and share. <a href="https://en.wikipedia.org/wiki/Furry_fandom" target="_blank">What’s A Furry</a></p>
+        <p>FurChat is a social media platform for therians and furries, providing a community space for like-minded individuals to connect and share.</p>
+        <a href="https://en.wikipedia.org/wiki/Furry_fandom" target="_blank" class="button">What’s A Furry</a>
     </div>
 
     <script>
